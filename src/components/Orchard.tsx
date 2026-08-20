@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FRUITS, HARVEST, type Fruit } from "@/lib/fruits";
 import { FruitIcon } from "@/components/FruitIcon";
 import { isRipe, type Progress } from "@/lib/progress";
@@ -45,6 +46,22 @@ export default function Orchard({ progress, onPick }: Props) {
           <Stat value={`${ripeCount}/9`} label="Trees Ripe" />
           <Stat value={totalPoints.toLocaleString()} label="Points Gathered" />
           <Stat value={totalPlays.toString()} label="Rounds Played" />
+        </div>
+
+        {/* group play */}
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <Link
+            href="/host"
+            className="ink press-sm inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-[color:hsl(var(--paper))]"
+          >
+            👥 Host group play →
+          </Link>
+          <Link
+            href="/join"
+            className="ink-sm press-sm inline-flex items-center gap-2 rounded-full bg-card px-6 py-3 text-sm font-semibold"
+          >
+            Join a game
+          </Link>
         </div>
       </header>
 

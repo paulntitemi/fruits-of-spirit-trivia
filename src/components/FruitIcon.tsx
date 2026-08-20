@@ -83,7 +83,7 @@ export function FruitIcon({ id, tone, className, strokeWidth = 3.4 }: Props) {
         </g>
       )}
 
-      {id === "patience" && (
+      {id === "longsuffering" && (
         <g {...common}>
           <path d="M50 22 L50 12" />
           <path d="M50 18 C40 8 26 10 22 16 C28 26 42 28 50 24 Z" fill={tone} />
@@ -95,7 +95,7 @@ export function FruitIcon({ id, tone, className, strokeWidth = 3.4 }: Props) {
         </g>
       )}
 
-      {id === "kindness" && (
+      {id === "gentleness" && (
         <g {...common}>
           <path d="M50 30 L52 20" />
           <Leaf tone={tone} sw={sw} />
@@ -114,7 +114,7 @@ export function FruitIcon({ id, tone, className, strokeWidth = 3.4 }: Props) {
         </g>
       )}
 
-      {id === "faithfulness" && (
+      {id === "faith" && (
         <g {...common}>
           <path d="M50 34 L50 22" />
           <path d="M50 26 C60 12 76 12 84 16 C79 29 63 33 51 29 Z" fill={tone} />
@@ -129,7 +129,7 @@ export function FruitIcon({ id, tone, className, strokeWidth = 3.4 }: Props) {
         </g>
       )}
 
-      {id === "gentleness" && (
+      {id === "meekness" && (
         <g {...common}>
           <path d="M50 28 L51 18" />
           <Leaf tone={tone} sw={sw} />
@@ -138,7 +138,7 @@ export function FruitIcon({ id, tone, className, strokeWidth = 3.4 }: Props) {
         </g>
       )}
 
-      {id === "selfcontrol" && (
+      {id === "temperance" && (
         <g {...common}>
           <path d="M16 22 C36 30 64 30 84 20" strokeWidth={sw + 0.6} fill="none" />
           <path d="M50 27 L50 44" />

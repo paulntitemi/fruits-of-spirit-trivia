@@ -11,6 +11,12 @@ import {
   type Progress,
 } from "@/lib/progress";
 import type { RoundId } from "@/lib/questions";
+import {
+  clearSession,
+  loadSession,
+  type QuizSession,
+  saveSession,
+} from "@/lib/session";
 
 type Screen =
   | { name: "orchard" }
@@ -20,13 +26,31 @@ type Screen =
 export default function Home() {
   const [progress, setProgress] = useState<Progress>({});
   const [screen, setScreen] = useState<Screen>({ name: "orchard" });
+  // Snapshot to resume when a quiz screen is restored after a refresh.
+  const [resume, setResume] = useState<QuizSession | null>(null);
 
-  // hydrate from localStorage after mount
+  // hydrate from localStorage after mount, restoring any in-progress session
   useEffect(() => {
     setProgress(loadProgress());
+    const snap = loadSession();
+    if (snap?.screen === "quiz") {
+      setResume(snap.quiz);
+      setScreen({
+        name: "quiz",
+        round: snap.quiz.round,
+        playToken: snap.quiz.playToken,
+      });
+    } else if (snap?.screen === "results") {
+      setScreen({
+        name: "results",
+        result: snap.result,
+        isNewBest: snap.isNewBest,
+      });
+    }
   }, []);
 
   const startRound = (round: RoundId) => {
+    setResume(null); // a fresh round should not reuse a restored snapshot
     setScreen({ name: "quiz", round, playToken: Date.now() });
   };
 
@@ -42,16 +66,23 @@ export default function Home() {
     );
     setProgress(next);
     saveProgress(next);
+    saveSession({ screen: "results", result, isNewBest });
     setScreen({ name: "results", result, isNewBest });
   };
 
-  const goHome = () => setScreen({ name: "orchard" });
+  const goHome = () => {
+    clearSession();
+    setScreen({ name: "orchard" });
+  };
 
   if (screen.name === "quiz") {
     return (
       <QuizView
         key={screen.playToken}
         round={screen.round}
+        playToken={screen.playToken}
+        initial={resume}
+        onProgress={(quiz) => saveSession({ screen: "quiz", quiz })}
         onFinish={finishRound}
         onQuit={goHome}
       />

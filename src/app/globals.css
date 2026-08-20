@@ -36,12 +36,12 @@
     --f-love: #e23744;
     --f-joy: #f2900c;
     --f-peace: #0e9f8f;
-    --f-patience: #7154c4;
-    --f-kindness: #e75a8c;
+    --f-longsuffering: #7154c4;
+    --f-gentleness: #e75a8c;
     --f-goodness: #3d9b44;
-    --f-faithfulness: #2a6db5;
-    --f-gentleness: #8fae2b;
-    --f-selfcontrol: #c2521c;
+    --f-faith: #2a6db5;
+    --f-meekness: #8fae2b;
+    --f-temperance: #c2521c;
 
     /* per-round theming, overwritten inline */
     --tone: #1d1b18;

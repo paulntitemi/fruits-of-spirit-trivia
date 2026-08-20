@@ -303,8 +303,8 @@ export const QUESTIONS: Question[] = [
 
   /* ─────────────── PATIENCE ─────────────── */
   {
-    id: "patience-1",
-    fruit: "patience",
+    id: "longsuffering-1",
+    fruit: "longsuffering",
     prompt: "Whose perseverance through suffering does James hold up as the great example?",
     options: ["Job", "Jonah", "Jeremiah", "Joshua"],
     answer: 0,
@@ -312,8 +312,8 @@ export const QUESTIONS: Question[] = [
     reference: "James 5:11",
   },
   {
-    id: "patience-2",
-    fruit: "patience",
+    id: "longsuffering-2",
+    fruit: "longsuffering",
     prompt: "How many years in total did Jacob work in order to marry Rachel?",
     options: ["7", "12", "14", "21"],
     answer: 2,
@@ -321,8 +321,8 @@ export const QUESTIONS: Question[] = [
     reference: "Genesis 29:20-30",
   },
   {
-    id: "patience-3",
-    fruit: "patience",
+    id: "longsuffering-3",
+    fruit: "longsuffering",
     prompt: "\u201CBe joyful in hope, patient in ___, faithful in prayer.\u201D",
     options: ["waiting", "affliction", "service", "poverty"],
     answer: 1,
@@ -330,8 +330,8 @@ export const QUESTIONS: Question[] = [
     reference: "Romans 12:12",
   },
   {
-    id: "patience-4",
-    fruit: "patience",
+    id: "longsuffering-4",
+    fruit: "longsuffering",
     prompt: "How many years did Israel wander in the wilderness before entering the promised land?",
     options: ["7", "12", "40", "70"],
     answer: 2,
@@ -339,9 +339,9 @@ export const QUESTIONS: Question[] = [
     reference: "Numbers 14:34",
   },
   {
-    id: "patience-5",
-    fruit: "patience",
-    prompt: "James compares patience to a farmer waiting for what?",
+    id: "longsuffering-5",
+    fruit: "longsuffering",
+    prompt: "James compares longsuffering to a farmer waiting for what?",
     options: [
       "The autumn and spring rains",
       "The stars to appear",
@@ -353,8 +353,8 @@ export const QUESTIONS: Question[] = [
     reference: "James 5:7",
   },
   {
-    id: "patience-6",
-    fruit: "patience",
+    id: "longsuffering-6",
+    fruit: "longsuffering",
     prompt: "Roughly how old was Abraham when the promised son Isaac was finally born?",
     options: ["75", "86", "100", "120"],
     answer: 2,
@@ -362,8 +362,8 @@ export const QUESTIONS: Question[] = [
     reference: "Genesis 21:5",
   },
   {
-    id: "patience-7",
-    fruit: "patience",
+    id: "longsuffering-7",
+    fruit: "longsuffering",
     prompt: "\u201CThose who hope in the LORD will renew their strength. They will soar on wings like ___.\u201D",
     options: ["doves", "eagles", "ravens", "swallows"],
     answer: 1,
@@ -371,28 +371,28 @@ export const QUESTIONS: Question[] = [
     reference: "Isaiah 40:31",
   },
   {
-    id: "patience-8",
-    fruit: "patience",
-    prompt: "Which fruit tree does Jesus use in a parable about giving one more year of patience?",
+    id: "longsuffering-8",
+    fruit: "longsuffering",
+    prompt: "Which fruit tree does Jesus use in a parable about giving one more year of longsuffering?",
     options: ["Olive tree", "Fig tree", "Vine", "Mustard tree"],
     answer: 1,
     note: "\u201CLeave it alone for one more year, and I\u2019ll dig around it and fertilise it.\u201D",
     reference: "Luke 13:6-9",
   },
   {
-    id: "patience-9",
-    fruit: "patience",
+    id: "longsuffering-9",
+    fruit: "longsuffering",
     prompt: "\u201CThe Lord is not slow in keeping his promise... he is ___ with you.\u201D",
     options: ["patient", "pleased", "gentle", "honest"],
     answer: 0,
-    note: "What looks like divine delay is actually divine patience, making room for repentance.",
+    note: "What looks like divine delay is actually divine longsuffering, making room for repentance.",
     reference: "2 Peter 3:9",
   },
 
   /* ─────────────── KINDNESS ─────────────── */
   {
-    id: "kindness-1",
-    fruit: "kindness",
+    id: "gentleness-1",
+    fruit: "gentleness",
     prompt: "\u201CBe kind and compassionate to one another, forgiving each other\u201D appears in which letter?",
     options: ["Ephesians", "Colossians", "Hebrews", "1 Peter"],
     answer: 0,
@@ -400,17 +400,17 @@ export const QUESTIONS: Question[] = [
     reference: "Ephesians 4:32",
   },
   {
-    id: "kindness-2",
-    fruit: "kindness",
-    prompt: "Which king searched for someone from Saul\u2019s family to show kindness to, and found Mephibosheth?",
+    id: "gentleness-2",
+    fruit: "gentleness",
+    prompt: "Which king searched for someone from Saul\u2019s family to show gentleness to, and found Mephibosheth?",
     options: ["Solomon", "David", "Hezekiah", "Josiah"],
     answer: 1,
     note: "He did it \u201Cfor Jonathan\u2019s sake\u201D \u2014 and gave him a permanent seat at the king\u2019s table.",
     reference: "2 Samuel 9:1-7",
   },
   {
-    id: "kindness-3",
-    fruit: "kindness",
+    id: "gentleness-3",
+    fruit: "gentleness",
     prompt: "Who stopped for the wounded traveller on the road down to Jericho?",
     options: ["A priest", "A Levite", "A Samaritan", "A tax collector"],
     answer: 2,
@@ -418,8 +418,8 @@ export const QUESTIONS: Question[] = [
     reference: "Luke 10:33-35",
   },
   {
-    id: "kindness-4",
-    fruit: "kindness",
+    id: "gentleness-4",
+    fruit: "gentleness",
     prompt: "Which woman refused to abandon her widowed mother-in-law Naomi?",
     options: ["Orpah", "Ruth", "Hannah", "Abigail"],
     answer: 1,
@@ -427,17 +427,17 @@ export const QUESTIONS: Question[] = [
     reference: "Ruth 1:16",
   },
   {
-    id: "kindness-5",
-    fruit: "kindness",
+    id: "gentleness-5",
+    fruit: "gentleness",
     prompt: "Who told his harvesters to deliberately leave extra grain for Ruth to gather?",
     options: ["Boaz", "Elimelek", "Obed", "Jesse"],
     answer: 0,
-    note: "Kindness dressed as agriculture \u2014 and it ended in a marriage.",
+    note: "Gentleness dressed as agriculture \u2014 and it ended in a marriage.",
     reference: "Ruth 2:15-16",
   },
   {
-    id: "kindness-6",
-    fruit: "kindness",
+    id: "gentleness-6",
+    fruit: "gentleness",
     prompt: "\u201CWhoever is kind to the poor lends to the ___.\u201D",
     options: ["LORD", "city", "elders", "future"],
     answer: 0,
@@ -445,8 +445,8 @@ export const QUESTIONS: Question[] = [
     reference: "Proverbs 19:17",
   },
   {
-    id: "kindness-7",
-    fruit: "kindness",
+    id: "gentleness-7",
+    fruit: "gentleness",
     prompt: "The widow of Zarephath shared her last flour and oil with which prophet?",
     options: ["Elisha", "Elijah", "Samuel", "Nathan"],
     answer: 1,
@@ -454,18 +454,18 @@ export const QUESTIONS: Question[] = [
     reference: "1 Kings 17:8-16",
   },
   {
-    id: "kindness-8",
-    fruit: "kindness",
-    prompt: "\u201CGod\u2019s kindness is intended to lead you to ___.\u201D",
+    id: "gentleness-8",
+    fruit: "gentleness",
+    prompt: "\u201CGod\u2019s gentleness is intended to lead you to ___.\u201D",
     options: ["repentance", "wisdom", "obedience", "worship"],
     answer: 0,
-    note: "Paul warns against treating divine patience as divine indifference.",
+    note: "Paul warns against treating divine longsuffering as divine indifference.",
     reference: "Romans 2:4",
   },
   {
-    id: "kindness-9",
-    fruit: "kindness",
-    prompt: "In Acts 28, the islanders of Malta showed Paul \u201Cunusual kindness\u201D by doing what?",
+    id: "gentleness-9",
+    fruit: "gentleness",
+    prompt: "In Acts 28, the islanders of Malta showed Paul \u201Cunusual gentleness\u201D by doing what?",
     options: [
       "Building him a boat",
       "Building a fire and welcoming them",
@@ -573,16 +573,16 @@ export const QUESTIONS: Question[] = [
   /* ─────────────── FAITHFULNESS ─────────────── */
   {
     id: "faith-1",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "\u201CThey are new every morning; great is your ___.\u201D",
-    options: ["mercy", "faithfulness", "kindness", "glory"],
+    options: ["mercy", "faith", "gentleness", "glory"],
     answer: 1,
     note: "Written in the ruins of Jerusalem \u2014 the boldest sentence in Lamentations.",
     reference: "Lamentations 3:23",
   },
   {
     id: "faith-2",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "Who kept praying three times a day at an open window, knowing it meant the lions\u2019 den?",
     options: ["Daniel", "Nehemiah", "Ezra", "Mordecai"],
     answer: 0,
@@ -591,7 +591,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "faith-3",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "Which three men refused to bow to Nebuchadnezzar\u2019s golden statue?",
     options: [
       "Shadrach, Meshach and Abednego",
@@ -600,12 +600,12 @@ export const QUESTIONS: Question[] = [
       "Joshua, Caleb and Eleazar",
     ],
     answer: 0,
-    note: "\u201CBut even if he does not\u2026\u201D \u2014 faithfulness without a guarantee.",
+    note: "\u201CBut even if he does not\u2026\u201D \u2014 faith without a guarantee.",
     reference: "Daniel 3:16-18",
   },
   {
     id: "faith-4",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "In the parable of the talents, the master says: \u201CWell done, good and faithful ___!\u201D",
     options: ["friend", "servant", "steward", "son"],
     answer: 1,
@@ -614,7 +614,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "faith-5",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "Hebrews 3 says who was \u201Cfaithful in all God\u2019s house as a servant\u201D?",
     options: ["Abraham", "Moses", "Aaron", "Samuel"],
     answer: 1,
@@ -623,16 +623,16 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "faith-6",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "\u201CIf we are faithless, he remains faithful, for he cannot ___ himself.\u201D",
     options: ["disown", "forget", "divide", "humble"],
     answer: 0,
-    note: "God's faithfulness is anchored in His own nature, not in our performance.",
+    note: "God's faith is anchored in His own nature, not in our performance.",
     reference: "2 Timothy 2:13",
   },
   {
     id: "faith-7",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "\u201CBe faithful, even to the point of death, and I will give you the ___ of life.\u201D",
     options: ["book", "water", "crown", "tree"],
     answer: 2,
@@ -641,7 +641,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "faith-8",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "Which prophet stayed faithful for forty years while almost nobody listened?",
     options: ["Jeremiah", "Obadiah", "Haggai", "Nahum"],
     answer: 0,
@@ -650,7 +650,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "faith-9",
-    fruit: "faithfulness",
+    fruit: "faith",
     prompt: "\u201CNow it is required that those who have been given a trust must prove ___.\u201D",
     options: ["wise", "faithful", "bold", "diligent"],
     answer: 1,
@@ -661,7 +661,7 @@ export const QUESTIONS: Question[] = [
   /* ─────────────── GENTLENESS ─────────────── */
   {
     id: "gentle-1",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "\u201CTake my yoke upon you and learn from me, for I am gentle and ___ in heart.\u201D",
     options: ["humble", "pure", "patient", "steady"],
     answer: 0,
@@ -670,8 +670,8 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-2",
-    fruit: "gentleness",
-    prompt: "\u201CLet your gentleness be evident to ___. The Lord is near.\u201D",
+    fruit: "meekness",
+    prompt: "\u201CLet your meekness be evident to ___. The Lord is near.\u201D",
     options: ["all", "the church", "your household", "the elders"],
     answer: 0,
     note: "Not just to the easy people. To all.",
@@ -679,7 +679,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-3",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "\u201CA gentle answer turns away wrath, but a harsh word stirs up ___.\u201D",
     options: ["anger", "envy", "strife", "folly"],
     answer: 0,
@@ -688,7 +688,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-4",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "On Mount Horeb, where did Elijah finally hear the LORD?",
     options: [
       "In the great wind",
@@ -702,7 +702,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-5",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "\u201CBlessed are the ___, for they will inherit the earth.\u201D",
     options: ["meek", "poor", "pure", "merciful"],
     answer: 0,
@@ -711,7 +711,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-6",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "Fulfilling Zechariah\u2019s prophecy, Jesus entered Jerusalem riding on what?",
     options: ["A war horse", "A donkey\u2019s colt", "A chariot", "He walked"],
     answer: 1,
@@ -720,16 +720,16 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-7",
-    fruit: "gentleness",
-    prompt: "Give the reason for your hope \u201Cwith gentleness and ___.\u201D",
-    options: ["respect", "boldness", "clarity", "patience"],
+    fruit: "meekness",
+    prompt: "Give the reason for your hope \u201Cwith meekness and ___.\u201D",
+    options: ["respect", "boldness", "clarity", "longsuffering"],
     answer: 0,
     note: "How you say it is part of what you are saying.",
     reference: "1 Peter 3:15",
   },
   {
     id: "gentle-8",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "Who is described as \u201Cmore humble than anyone else on the face of the earth\u201D?",
     options: ["Job", "Moses", "David", "Enoch"],
     answer: 1,
@@ -738,7 +738,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "gentle-9",
-    fruit: "gentleness",
+    fruit: "meekness",
     prompt: "Isaiah says of the Servant: \u201CA bruised reed he will not break, a ___ wick he will not snuff out.\u201D",
     options: ["smouldering", "fallen", "dying", "flickering"],
     answer: 0,
@@ -749,8 +749,8 @@ export const QUESTIONS: Question[] = [
   /* ─────────────── SELF-CONTROL ─────────────── */
   {
     id: "self-1",
-    fruit: "selfcontrol",
-    prompt: "\u201CLike a city whose ___ are broken through is a person who lacks self-control.\u201D",
+    fruit: "temperance",
+    prompt: "\u201CLike a city whose ___ are broken through is a person who lacks temperance.\u201D",
     options: ["gates", "walls", "towers", "wells"],
     answer: 1,
     note: "No walls means anything at all can walk in.",
@@ -758,7 +758,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-2",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "How many days did Jesus fast in the wilderness before He was tempted?",
     options: ["3", "7", "40", "70"],
     answer: 2,
@@ -767,7 +767,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-3",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "Which judge lost his strength after giving away the secret of his uncut hair?",
     options: ["Gideon", "Jephthah", "Samson", "Ehud"],
     answer: 2,
@@ -776,7 +776,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-4",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "Paul says athletes go into strict training for a crown that will not ___.",
     options: ["last", "shine", "fit", "return"],
     answer: 0,
@@ -785,16 +785,16 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-5",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "Who ran out of the house, leaving his cloak behind, rather than sin with Potiphar\u2019s wife?",
     options: ["Joseph", "Daniel", "Benjamin", "Judah"],
     answer: 0,
-    note: "Self-control sometimes looks like sprinting.",
+    note: "Temperance sometimes looks like sprinting.",
     reference: "Genesis 39:12",
   },
   {
     id: "self-6",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "What did Esau trade his birthright for?",
     options: [
       "A field",
@@ -808,8 +808,8 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-7",
-    fruit: "selfcontrol",
-    prompt: "Grace teaches us to say \u201CNo\u201D to ungodliness and to live self-controlled, upright and ___ lives.",
+    fruit: "temperance",
+    prompt: "Grace teaches us to say \u201CNo\u201D to ungodliness and to live temperanceled, upright and ___ lives.",
     options: ["godly", "quiet", "generous", "joyful"],
     answer: 0,
     note: "Grace is not permission to drift; it is a teacher with a curriculum.",
@@ -817,7 +817,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-8",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "\u201CBe alert and of sober mind. Your enemy the devil prowls around like a roaring ___.\u201D",
     options: ["lion", "wolf", "bear", "serpent"],
     answer: 0,
@@ -826,7 +826,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "self-9",
-    fruit: "selfcontrol",
+    fruit: "temperance",
     prompt: "\u201CEveryone should be quick to listen, slow to speak and slow to become ___.\u201D",
     options: ["angry", "weary", "proud", "afraid"],
     answer: 0,
@@ -856,17 +856,17 @@ export const QUESTIONS: Question[] = [
   {
     id: "harvest-3",
     fruit: "harvest",
-    prompt: "Which quality completes the list: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and ___?",
-    options: ["wisdom", "self-control", "courage", "humility"],
+    prompt: "Which quality completes the list: love, joy, peace, longsuffering, gentleness, goodness, faith, meekness and ___?",
+    options: ["wisdom", "temperance", "courage", "humility"],
     answer: 1,
-    note: "Self-control brings up the rear \u2014 and holds the other eight together.",
+    note: "Temperance brings up the rear \u2014 and holds the other eight together.",
     reference: "Galatians 5:23",
   },
   {
     id: "harvest-4",
     fruit: "harvest",
     prompt: "Which of these is NOT listed as a fruit of the Spirit?",
-    options: ["Goodness", "Gentleness", "Knowledge", "Faithfulness"],
+    options: ["Goodness", "Meekness", "Knowledge", "Faith"],
     answer: 2,
     note: "Knowledge appears in Peter's list of virtues, but not in Galatians 5.",
     reference: "Galatians 5:22-23",
@@ -877,7 +877,7 @@ export const QUESTIONS: Question[] = [
     prompt: "\u201CAgainst such things there is no ___.\u201D",
     options: ["law", "end", "shame", "rival"],
     answer: 0,
-    note: "Paul's dry punchline: nobody ever passed a law against kindness.",
+    note: "Paul's dry punchline: nobody ever passed a law against gentleness.",
     reference: "Galatians 5:23",
   },
   {
@@ -925,7 +925,7 @@ export const QUESTIONS: Question[] = [
     id: "harvest-10",
     fruit: "harvest",
     prompt: "Which quality is listed first?",
-    options: ["Joy", "Peace", "Love", "Faithfulness"],
+    options: ["Joy", "Peace", "Love", "Faith"],
     answer: 2,
     note: "Love leads, and many read the other eight as descriptions of what love looks like.",
     reference: "Galatians 5:22",
@@ -934,9 +934,9 @@ export const QUESTIONS: Question[] = [
     id: "harvest-11",
     fruit: "harvest",
     prompt: "Which quality comes immediately after peace in the list?",
-    options: ["Kindness", "Patience", "Goodness", "Gentleness"],
+    options: ["Gentleness", "Longsuffering", "Goodness", "Meekness"],
     answer: 1,
-    note: "Love, joy, peace \u2014 then patience turns the list outward toward other people.",
+    note: "Love, joy, peace \u2014 then longsuffering turns the list outward toward other people.",
     reference: "Galatians 5:22",
   },
   {
@@ -984,6 +984,13 @@ export function shuffle<T>(items: T[]): T[] {
 
 export const QUESTIONS_PER_ROUND = 8;
 export const HARVEST_ROUND_SIZE = 12;
+
+const BY_ID = new Map(QUESTIONS.map((q) => [q.id, q]));
+
+/** Resolve a frozen, ordered id list back into questions (skips unknown ids). */
+export function getQuestionsByIds(ids: string[]): Question[] {
+  return ids.map((id) => BY_ID.get(id)).filter((q): q is Question => !!q);
+}
 
 export function buildRound(round: RoundId): Question[] {
   if (round === "harvest") {

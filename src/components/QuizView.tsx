@@ -1,9 +1,10 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { FruitIcon } from "@/components/FruitIcon";
 import { FRUIT_MAP, HARVEST } from "@/lib/fruits";
 import { buildRound, type Question, type RoundId } from "@/lib/questions";
+import type { QuizSession } from "@/lib/session";
 
 export interface RoundResult {
   round: RoundId;
@@ -15,6 +16,11 @@ export interface RoundResult {
 
 interface Props {
   round: RoundId;
+  playToken: number;
+  /** When present, resume this exact quiz instead of building a fresh round. */
+  initial?: QuizSession | null;
+  /** Reports a fresh snapshot on every meaningful state change (for refresh-resume). */
+  onProgress?: (session: QuizSession) => void;
   onFinish: (result: RoundResult) => void;
   onQuit: () => void;
 }
@@ -30,18 +36,48 @@ function roundTheme(round: RoundId) {
   return { name: f.name, hex: f.hex, wash: f.wash };
 }
 
-export default function QuizView({ round, onFinish, onQuit }: Props) {
-  const questions = useMemo<Question[]>(() => buildRound(round), [round]);
+export default function QuizView({
+  round,
+  playToken,
+  initial,
+  onProgress,
+  onFinish,
+  onQuit,
+}: Props) {
+  // Freeze the question order for the life of this mount: reuse the restored
+  // order when resuming, otherwise build (and shuffle) a fresh round once.
+  const questions = useMemo<Question[]>(
+    () => initial?.questions ?? buildRound(round),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [round],
+  );
   const theme = roundTheme(round);
 
-  const [index, setIndex] = useState(0);
-  const [picked, setPicked] = useState<number | null>(null);
-  const [correct, setCorrect] = useState(0);
-  const [points, setPoints] = useState(0);
-  const [streak, setStreak] = useState(0);
-  const [maxStreak, setMaxStreak] = useState(0);
+  const [index, setIndex] = useState(initial?.index ?? 0);
+  const [picked, setPicked] = useState<number | null>(initial?.picked ?? null);
+  const [correct, setCorrect] = useState(initial?.correct ?? 0);
+  const [points, setPoints] = useState(initial?.points ?? 0);
+  const [streak, setStreak] = useState(initial?.streak ?? 0);
+  const [maxStreak, setMaxStreak] = useState(initial?.maxStreak ?? 0);
   const [timeLeft, setTimeLeft] = useState(SECONDS_PER_Q);
-  const [gained, setGained] = useState(0);
+  const [gained, setGained] = useState(initial?.gained ?? 0);
+
+  // Persist a snapshot on every meaningful change so a refresh can resume here.
+  useEffect(() => {
+    onProgress?.({
+      round,
+      questions,
+      index,
+      picked,
+      correct,
+      points,
+      streak,
+      maxStreak,
+      gained,
+      playToken,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, picked, correct, points, streak, maxStreak, gained]);
 
   const q = questions[index];
   const revealed = picked !== null;

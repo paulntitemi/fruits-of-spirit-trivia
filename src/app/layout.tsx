@@ -20,7 +20,7 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "The Nine — Fruit of the Spirit Bible Trivia",
   description:
-    "A colourful Bible trivia orchard. Test what you know about love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control.",
+    "A colourful Bible trivia orchard. Test what you know about love, joy, peace, longsuffering, gentleness, goodness, faith, meekness and temperance.",
 };
 
 export default function RootLayout({
