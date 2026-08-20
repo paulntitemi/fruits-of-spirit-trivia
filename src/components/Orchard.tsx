@@ -54,7 +54,7 @@ export default function Orchard({ progress, onPick }: Props) {
             href="/host"
             className="ink press-sm inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-[color:hsl(var(--paper))]"
           >
-            👥 Host group play →
+            Host group game →
           </Link>
           <Link
             href="/join"
