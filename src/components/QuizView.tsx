@@ -298,11 +298,11 @@ export default function QuizView({
 
       {/* ── Continue ── */}
       {revealed && (
-        <div className="anim-rise sticky bottom-4 mt-6">
+        <div className="anim-rise sticky bottom-4 z-40 mt-6">
           <button
             type="button"
             onClick={advance}
-            className="press ink-lg w-full rounded-lg bg-ink py-4 text-lg font-bold text-[color:hsl(var(--paper))]"
+            className="press ink-lg w-full rounded-lg bg-ink py-4 text-center text-lg font-bold text-[color:hsl(var(--paper))]"
           >
             {isLast ? "See your harvest →" : "Next question →"}
           </button>

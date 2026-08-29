@@ -191,7 +191,7 @@ function LiveStandings({ code, meId }: { code: string; meId: string }) {
   const rank = groups.findIndex((g) => g.id === meId);
 
   return (
-    <div className="fixed bottom-3 left-3 z-50 max-w-[15rem]">
+    <div className="fixed bottom-20 left-3 z-30 max-w-[15rem]">
       {open && (
         <div className="ink anim-rise mb-2 max-h-[55vh] overflow-y-auto rounded-lg bg-card p-3">
           <Leaderboard groups={groups} highlightId={meId} compact />
