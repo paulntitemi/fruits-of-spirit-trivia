@@ -1723,7 +1723,7 @@ export function shuffle<T>(items: T[]): T[] {
 }
 
 export const QUESTIONS_PER_ROUND = 8;
-export const HARVEST_ROUND_SIZE = 12;
+export const HARVEST_ROUND_SIZE = 20;
 
 const BY_ID = new Map(QUESTIONS.map((q) => [q.id, q]));
 
@@ -1736,7 +1736,7 @@ export function buildRound(round: RoundId): Question[] {
   if (round === "harvest") {
     const general = shuffle(QUESTIONS.filter((q) => q.fruit === "harvest")).slice(
       0,
-      6,
+      8,
     );
     const perFruit = shuffle(QUESTIONS.filter((q) => q.fruit !== "harvest")).slice(
       0,

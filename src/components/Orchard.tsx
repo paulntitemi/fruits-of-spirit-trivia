@@ -102,7 +102,7 @@ export default function Orchard({ progress, onPick }: Props) {
               <p className="label text-ink-soft">The Grand Round</p>
               <h2 className="display text-4xl sm:text-5xl">Full Harvest</h2>
               <p className="mt-1 max-w-md text-sm text-ink-soft">
-                Twelve mixed questions from every tree. Bring it all in.
+                Twenty mixed questions from every tree. Bring it all in.
               </p>
             </div>
           </div>

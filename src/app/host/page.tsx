@@ -71,7 +71,7 @@ export default function HostSetup() {
         <RoundButton
           id="harvest"
           name="Full Harvest"
-          subtitle="12 mixed questions"
+          subtitle="20 mixed questions"
           hex={HARVEST.hex}
           wash={HARVEST.wash}
           wide
